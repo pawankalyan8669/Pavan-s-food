@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../index.html">
+  <title>Document</title>
+</head>
+<body>
+  <div class="scr">
+    <div class="container">
+      <img style=" height: 100%;width: 50%;"src="https://ak.picdn.net/shutterstock/videos/8470921/thumb/11.jpg" alt="Notebook" style="width:100%;">
+  
+      <div class="slideshow-container">
+  
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img class="responsive"
+            src="https://purepng.com/public/uploads/large/purepng.com-sandwichfood-slice-salad-tasty-bread-vegetable-health-delicious-breakfast-sandwich-9415246186167yco8.png"
+            alt="">
+          <div class="text">Sandwich</div>
+        </div>
+  
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img class="responsive"
+          src="https://purepng.com/public/uploads/large/purepng.com-donutfood-dessert-donut-doughnut-fat-941524635175i5xtv.png">
+          <div class="text">Donuts</div>
+        </div>
+  
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img class="responsive"
+            src="https://pluspng.com/img-png/barbecue-food-png-grill-chicken-png-image-purepng-free-transparent-cc0-png-image-library-1611.png"
+            alt="">
+          <div class="text">Tandoori</div>
+        </div>
+  
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img class="responsive"
+            src="https://www.pngmart.com/files/1/Burger-Food-PNG.png"
+            alt="">
+          <div class="text">Burger</div>
+        </div>
+  
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img class="responsive"
+            src="https://pngimg.com/uploads/pizza/pizza_PNG7103.png" 
+            alt="">
+          <div class="text">Pizza</div>
+        </div>
+  
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+  
+      </div>
+      <br>
+  
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+  
+      </div>
+  
+    </div>
+  
+  
+    <h1 class="heading"> <span>Place your Order</span> now </h1>
+    <div class="scr2">
+      <div class="order" id="order">
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Address">
+          <input type="text" placeholder="Landmark">
+          <input type="number" placeholder=" Mobile number">
+          <input type="submit" value="Place order now" class="btn">
+    
+        </form>
+    
+        <div class="image">
+          <img src="../images/order.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  
+  </div>
+    
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+</html>
+
+<style>
+  .scr{
+    background-image: url('../images/ord.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .image img{
+    width: 70%;
+  }
+  .container,
+  .prev,
+  .next,
+  .slideshow-container,
+  .mySlides img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 60%;
+    position: absolute;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    /* margin-top: -22px; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+
+    /* user-select: none; */
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 30px 0 0 30px;
+    margin-left: 5%;
+
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    margin-right: 5%;
+    right: 0;
+    border-radius: 0 30px 30px 0;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 6vh;
+    padding: 0px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #fcf9f9;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .responsive {
+    width: 30%;
+    margin: auto;
+    height: auto;
+  }
+
+  .scr2 .order {
+    /* background-color: #f7ebeb; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .order form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
+  }
+  input{
+    height: 6vh;
+    margin: 20px;
+    width: 30vw;
+  }
+  .image{
+    display: flex;
+    float: right;
+  }
+
+  .heading{
+    background-color: #000000;
+    color: rgb(245, 242, 242);
+    font-size: 3em;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color:black;
+  background:green;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background: orange;
+  letter-spacing: .1rem;
+}
+  
+</style>

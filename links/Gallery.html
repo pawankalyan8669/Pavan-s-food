@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../index.html">
+  <title>Gallery</title>
+</head>
+
+<body>
+  <div class="nav">
+    <img src="../food_logo.png" alt="">
+    <h1>Our Gallery</h1>
+    <a href="../index.html">Home</a>
+  </div>
+
+  <h2>Image Gallery</h2>
+  <div class="Gallery">
+    <div class="cont">
+      <img src="../images/G4.jpg" alt="">
+      <p>We started our 1st Restaurant in 1992💚</p>
+    </div>
+    <div class="cont">
+      <p>Our 1st advertisement😁</p>
+      <img src="../images/G2.jpg" alt="">
+    </div>
+    <div class="cont">
+      <img src="../images/G1.jpg" alt="">
+      <p>Thousands of people loved💖 our food</p>
+    </div>
+    
+    <div class="cont">
+      <p>From year 1999,we started new branches🎉🎊</p>
+      <img src="../images/G3.jpg" alt="">
+    </div>
+    <div class="cont">
+      <img src="../images/G5.jpg" alt="">
+      <p>Our quality,taste remained same all these years🤤</p>
+    </div>
+    <div class="cont">
+      <p>With requests from our customers ,we launched online services in 2005🎊</p>
+      <img src="../images/G6.jpg" alt="">
+    </div>
+    <div class="cont">
+      <img src="../images/G8.jpg" alt="">
+      <p>Neat & Clean packing</p>
+    </div>
+    <div class="cont">
+      <p>Delivers on time💌</p>
+      <img src="../images/G7.jpg" alt="">
+    </div>
+    <div class="cont">
+      <img src="../images/G9.jpg" alt="">
+      <p>Thousands of people happy with our healthy food 😍</p>
+    </div>
+
+  </div>
+
+
+
+  <style>
+    .Gallery {
+      background: #f7f7f7;
+      padding: 2%;
+    }
+
+    .nav {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 1rem 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav img {
+      height: 6em;
+    }
+
+    .nav a {
+      font-size: 2em;
+    }
+
+    .Gallery .cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      justify-items: center;
+      gap: 1rem;
+      padding: 0 20vh 10vh;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      border-left: .1rem solid rgba(0,0,0,.1);
+      border-right: .1rem solid rgba(0,0,0,.1);
+    }
+
+    .Gallery h3 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .Gallery .para {
+      margin-top: 20vh;
+    }
+
+    .Gallery p {
+      font-size: 3rem;
+      line-height: 2;
+      text-align: center;
+      /* justify-content: center; */
+    }
+
+    .Gallery .cont img {
+      width: 40%;
+
+    }
+    .Gallery .cont img:hover {
+      width: 60%;
+
+    }
+
+    @media (max-width: 800px) {
+      .Gallery .cont {
+        flex-direction: column;
+      }
+    }
+  </style>

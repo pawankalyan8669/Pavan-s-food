@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../index.html">
+  <title>sign-in</title>
+</head>
+<body>
+  <div class="nav">
+    <img src="../food_logo.png" alt="">
+    <h3>About Us</h3>
+    <a href="../index.html">Home</a>
+  </div>
+  <div class="register">
+    
+    <h2 style="color: rgb(242, 245, 239);font-size: 4vw;text-decoration: underline;">Register</h2>
+    <form class="login">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="number" placeholder="Mobile number">
+      <input type="text" placeholder="country">
+      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Confirm Password">
+      <div>
+        <input type="checkbox">
+        <p style="color:white;">Accept Terms & conditions</p>
+      </div>
+      <button class="btn">Sign up</button>
+    </form>
+    
+  </div>
+</body>
+
+</html>
+
+<style>
+  .nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav img {
+    height: 6em;
+  }
+
+  .nav a {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .register {
+  background-color: rgb(223, 234, 229);
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0%;
+  padding-right: 50%;
+  padding-top: 15%;
+  background-image: url('../images/main.jpg');
+
+}
+
+.register form{
+  justify-content: left;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+  display: flex;
+  flex: 2;
+  padding: 0.5vw;
+  border: 0.2vw solid rgb(125, 108, 139);
+  margin: 0 0 1vw 0;
+  border-radius: 0.5em;
+
+}
+
+input[type=checkbox] {
+  height: 3vh;
+  width: 3vw;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  width: 80%;
+  padding-top: 0;
+
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  flex: 10;
+  justify-content: baseline;
+
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color:black;
+  background:green;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background: orange;
+  letter-spacing: .1rem;
+}
+
+
+</style>

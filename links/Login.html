@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../index.html">
+  <title>Login</title>
+</head>
+<body>
+  <div class="sign-in">
+    <div class="sign-in2">
+      <h1 style="text-align: center;"><u>Log in</u></h1>
+      <div class="block">
+        <a
+          href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Continue
+          with Google</a>
+      </div>    
+        <!-- <input name="email" required="" maxlength="64" minlength="7" placeholder="Email" type="email"> -->
+      <input name="phonenumber" required="" maxlength="12" minlength="10" placeholder="phone number" type="number">
+      <input type="password" maxlength="64" minlength="6" required="" placeholder="Password">
+      <button>Log in</button>
+      <div class="block">
+        Don't have an account?&nbsp;<a style="color: black;"href="./sign-up.html">Sign up</a>
+      </div>
+      
+    </div>
+  </div>
+   
+</body>
+</html>
+
+<style>
+  .sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('../images/G5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top:10% ;
+  padding-bottom:10% ;
+
+}
+
+.sign-in2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2%;
+  background-color: whitesmoke;
+  color: #1c1d1f;
+  font-size: 2vh;
+  margin-left: 30%;
+  width: 30%;
+  padding: 50px;
+  border-radius: 10%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.block {
+  margin-bottom: 2%;
+  padding: 5%;
+}
+
+.block a {
+  font-size: 20px;
+  padding: 1%;
+  color: rgb(23, 128, 189);
+  
+}
+
+.block input {
+  
+  width: 10vh;
+  box-shadow: rgba(72, 167, 94, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.sign-in input{
+  height: 30px;
+  margin-bottom: 5%;
+  
+}
+
+
+</style>

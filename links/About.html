@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../index.html">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="About">
+    <div class="nav">
+      <img src="../food_logo.png" alt="">
+      <h3>About Us</h3>
+      <a href="../index.html">Home</a>
+    </div>
+
+    <p class="para">Ours is the first of its kind,authentic Indian restaurant.<br></p>
+    <div class="cont">
+      <img src="https://www.neoadviser.com/wp-content/uploads/2019/04/OrganicProduce-e1428702141300.jpg" alt="">
+      <p>We grow all food crops using organic procedures and our products are 100% free from pesticides
+        and other harmfull chemicals.</p>
+    </div>
+    <div class="cont">
+      <p>
+        With chefs experienced over 15 years, our restaurant 
+        memorises your native Indian dishes with our food
+      </p>
+      <img src="https://www.freshjobsworld.com/wp-content/uploads/2020/07/Chef-Jobs-in-UAE.jpg" alt="">
+
+    </div>
+
+    <p>
+      So why wait,order with us Now!!<br><button class="btn">ORDER NOW</button>
+    </p>
+  </div>
+
+</body>
+
+</html>
+<style>
+  .About {
+    background: #f7f7f7;
+  }
+
+  .nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav img {
+    height: 6em;
+  }
+
+  .nav a {
+    font-size: 2em;
+  }
+
+  .About .cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 1rem;
+    padding: 0 20vh 20vh;
+
+  }
+
+  .About h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .About .para {
+    margin-top: 20vh;
+  }
+
+  .About p {
+    font-size: 3rem;
+    line-height: 2;
+    text-align: center;
+    /* justify-content: center; */
+  }
+
+  .About .cont img {
+    width: 50%;
+
+  }
+
+  @media (max-width: 800px) {
+    .About .cont {
+      flex-direction: column;
+    }
+  }
+
+  .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color:black;
+  background:green;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background: orange;
+  letter-spacing: .1rem;
+}
+
+</style>
